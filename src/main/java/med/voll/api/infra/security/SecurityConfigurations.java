@@ -51,10 +51,10 @@ public class SecurityConfigurations {
         return new BCryptPasswordEncoder();
     }
 
-//    @Bean
-//    public WebSecurityCustomizer webSecurityCustomizer() {
-//        return (web) -> web.ignoring().requestMatchers(new AntPathRequestMatcher("/login"));
-//    }
+    @Bean
+   public WebSecurityCustomizer webSecurityCustomizer() {
+        return (web) -> web.ignoring().requestMatchers(new AntPathRequestMatcher("/login"));
+    }
 
 
 }
