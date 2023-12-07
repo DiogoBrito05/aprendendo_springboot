@@ -60,7 +60,7 @@ public class TokenServicet {
 
 
     private Instant dataexpiracacao() {
-       return LocalDateTime.now().plusHours(3).toInstant(ZoneOffset.of("-03:00"));
+       return LocalDateTime.now().plusHours(100).toInstant(ZoneOffset.of("-03:00"));
     }
 
 }
