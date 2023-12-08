@@ -7,4 +7,7 @@ public class DadosDetalhamentoConsulta {
     }
 
 
+    public DadosDetalhamentoConsulta(Consulta consulta) {
+        this(consulta.getId(), consulta.getMedico().getId(), consulta.getPaciente().getId(), consulta.getData());
+    }
 }
